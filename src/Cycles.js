@@ -6,7 +6,7 @@
 export function rangeSum(start, end) {
     let result = 0;
 
-    for (i = start; i <= end; i++) {
+    for (let i = start; i <= end; i++) {
         if (i % 2 == 0) {
             result += i;
         }
@@ -46,7 +46,7 @@ export function symbolsReplace(message) {
     } while (count < message.length);
 
     if (count % 3 != 0) {
-        resultString += message.substring(count - 3, count);
+        resultString += message.substring(count - 2, count);
     }
     return resultString;
 }
